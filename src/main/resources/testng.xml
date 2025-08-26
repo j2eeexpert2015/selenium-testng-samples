@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="AutomationPracticeSuite" verbose="1">
+	<!--  
+    <test name="PracticePageElementsTest" preserve-order="true">
+        <classes>
+            <class name="com.automation.practice.AutomationPracticeTest">
+                <methods>
+                    <include name="testRadioButtons"/>
+                    <include name="testAutocompleteField"/>
+                    <include name="testDropdownExample"/>
+                    <include name="testCheckboxExample"/>
+                    <include name="testSwitchWindowExample"/>
+                    <include name="testSwitchTabExample"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    -->
+    
+    <test name="PriorityBasedExecution">
+        <classes>
+            <class name="org.seleniumsamples.AutomationPracticeTest"/>
+            <!-- Methods with @Test(priority=1), @Test(priority=2), etc. will run in order -->
+        </classes>
+    </test>
+    
+</suite>
